@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Megarket</h1></center>
+    <h2>Registrar productos de la tienda:</h2>
+    <table>
+        <tr>
+            <th>
+
+                <form name="megamarket" method="post" action="procesar.php">
+                    <label for="nombre">nombre: </label>
+                    <input type="text" name= "nombre" id="nombre" require>
+                    <br>
+                    <label for="precio">precio:</label>
+                    <input type="number" name= "precio" id="precio" require>
+                    <br>
+                    <label for="cantidad">cantidad:</label>
+                    <input type="number" name= "cantidad" id="cantidad" require>
+                    <br>
+                    <label for="descripcion">descripción:</label>
+                    <input type="text" name="descripcion" id="descripcion" require>
+                    <br>
+                    <button type="submit">guardar</button>
+                </form>
+                <br>
+                <br>
+                <h2> Productos registrados</h2>
+                <form name="megamarket" method="post" action="buscar.php">
+                    <label for="buscar">Producto:</label>
+                    <input type="text" name="buscar" id="buscar">
+                    <button type="submit">buscar</button>
+                </form>
+                <p>los productos ingresados en el sistema son:</p>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
